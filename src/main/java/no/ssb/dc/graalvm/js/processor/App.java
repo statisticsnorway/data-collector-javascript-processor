@@ -9,6 +9,7 @@ public class App {
 
         try (Context context = Context.create()) {
             System.out.printf("Hello from GraalVM App%n");
+
         }
     }
 }
