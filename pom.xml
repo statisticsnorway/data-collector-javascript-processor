@@ -280,7 +280,7 @@
                 <version>2.19.1</version> <!-- Newer version do not yet work with Java 11 -->
                 <configuration>
                     <!-- VM options help: java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+JVMCIPrintProperties -->
-                    <argLine>${argLine} -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI --module-path=${compiler.dir} --upgrade-module-path=${compiler.dir}/compiler.jar</argLine>
+                    <argLine>-XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI --module-path=${compiler.dir} --upgrade-module-path=${compiler.dir}/compiler.jar</argLine>
                 </configuration>
             </plugin>
 
