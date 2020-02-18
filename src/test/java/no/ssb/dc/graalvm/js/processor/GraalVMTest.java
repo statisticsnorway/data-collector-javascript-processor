@@ -11,8 +11,7 @@ import java.io.IOException;
 public class GraalVMTest {
 
     @Test
-    public void testName() throws IOException {
-
+    public void testGraalVM() throws IOException {
         if (System.getProperty("java.vm.name").contains("GraalVM")) {
             System.out.printf("java.vm.name: %s%n", System.getProperty("java.vm.name"));
         }
@@ -23,7 +22,6 @@ public class GraalVMTest {
             context.eval(Source.newBuilder("js", source, "src.js").build());
             Value hello = context.getBindings("js").getMember("hello");
         }
-
     }
 }
 
