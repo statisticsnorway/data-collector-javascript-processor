@@ -14,13 +14,13 @@
     <inceptionYear>2019</inceptionYear>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>15</java.version>
         <module.build.sourceEncoding>UTF-8</module.build.sourceEncoding>
         <maven.javadoc.skip>true</maven.javadoc.skip>
 
         <compiler.dir>${project.build.directory}/compiler</compiler.dir>
 
-        <graalvm.version>19.3.1</graalvm.version>
+        <graalvm.version>19.3.3</graalvm.version>
 
         <slf4j.version>1.8.0-beta2</slf4j.version>
         <logback.version>1.3.0-alpha4</logback.version>
@@ -233,7 +233,7 @@
                     <plugin>
                         <groupId>org.jacoco</groupId>
                         <artifactId>jacoco-maven-plugin</artifactId>
-                        <version>0.8.5</version>
+                        <version>0.8.6</version>
                         <executions>
                             <execution>
                                 <id>prepare-agent</id>
@@ -252,7 +252,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.0.0-M4</version>
+                        <version>3.0.0-M5</version>
                         <configuration>
                             <argLine>
                                 ${argLine}
@@ -299,7 +299,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M4</version>
+                <version>3.0.0-M5</version>
                 <configuration>
                     <!-- VM options help: java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+JVMCIPrintProperties -->
                     <argLine>-XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI --module-path=${compiler.dir}
