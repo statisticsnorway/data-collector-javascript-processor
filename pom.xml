@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>no.ssb.dc</groupId>
     <artifactId>data-collector-javascript-processor</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
     <packaging>jar</packaging>
 
     <name>Data Collector Javascript Processor</name>
@@ -54,7 +53,7 @@
         <connection>scm:git:git://github.com/statisticsnorway/data-collector-javascript-processor.git</connection>
         <developerConnection>scm:git:git@github.com:statisticsnorway/data-collector-javascript-processor.git
         </developerConnection>
-        <tag>HEAD</tag>
+        <tag>0.1</tag>
     </scm>
 
     <distributionManagement>
@@ -399,10 +398,10 @@
                             <arguments>
                                 <argument>--module-path</argument>
                                 <!-- automatically creates the modulepath using all project dependencies, also adding the project build directory -->
-                                <modulepath/>
+                                <modulepath />
                                 <argument>-classpath</argument>
                                 <!-- automatically creates the classpath using all project dependencies, also adding the project build directory -->
-                                <classpath/>
+                                <classpath />
                                 <argument>-XX:+UnlockExperimentalVMOptions</argument>
                                 <argument>-XX:+EnableJVMCI</argument>
                                 <argument>--upgrade-module-path=${compiler.dir}/compiler.jar</argument>
@@ -420,10 +419,10 @@
                             <arguments>
                                 <argument>--module-path</argument>
                                 <!-- automatically creates the modulepath using all project dependencies, also adding the project build directory -->
-                                <modulepath/>
+                                <modulepath />
                                 <argument>-classpath</argument>
                                 <!-- automatically creates the classpath using all project dependencies, also adding the project build directory -->
-                                <classpath/>
+                                <classpath />
                                 <argument>no.ssb.dc.graalvm.js.processor.App</argument>
                             </arguments>
                         </configuration>
