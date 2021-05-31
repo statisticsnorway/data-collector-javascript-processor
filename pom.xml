@@ -4,7 +4,7 @@
 
     <groupId>no.ssb.dc</groupId>
     <artifactId>data-collector-javascript-processor</artifactId>
-    <version>0.1</version>
+    <version>0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Data Collector Javascript Processor</name>
@@ -53,7 +53,7 @@
         <connection>scm:git:git://github.com/statisticsnorway/data-collector-javascript-processor.git</connection>
         <developerConnection>scm:git:git@github.com:statisticsnorway/data-collector-javascript-processor.git
         </developerConnection>
-        <tag>0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
